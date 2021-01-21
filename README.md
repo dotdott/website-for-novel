@@ -1,4 +1,7 @@
 # website-for-novel
+See it in live:
+https://dotdott.github.io/novel-scan/main.html
+
 This is a website that I create with the intention of translating to portuguese-content some webnovels that I like to read in my free time.
 It is very simple, but efficient and not so bothersome to update.
 
