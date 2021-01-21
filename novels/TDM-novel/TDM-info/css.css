@@ -1,0 +1,137 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    min-width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, rgba(255,255,255, .7), rgba(255,255,255,.3));
+}
+
+hr {
+    display: none;
+}
+
+.container {
+    background-image: linear-gradient(to bottom right, rgba(255,255,255, .7), rgba(255,255,255,.3));
+    border-radius: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    z-index: 2;
+}
+.novel-info h2,
+.novel-info h3 {
+    color: #0276DB;
+}
+
+/* NOVEL INFO DISPLAY */
+.novel-info h3 {
+    letter-spacing: 1px;
+    color:  #0276DB;
+}
+
+.novel-info {
+    margin-left: 15px;
+    margin-right: 20px;
+    flex: 1;
+}
+.novel-info h2 {
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.novel-info img {
+    width: 300px;
+    margin-top: .5rem;
+}
+
+.novel-info h3 {
+    line-height: 2rem;
+    margin-top: .5rem;
+}
+
+/* END NOVEL INFO DISPLAY */
+
+
+/* NOVEL DESCRIPTION & CHAPTERS */
+.novel-content {
+    min-width: 50%;
+    min-height: 80%;
+    justify-content: flex-start;
+    flex: 4;
+}
+
+.novel-content h2 {
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #0276DB;
+}
+
+.novel-content
+.description  {
+    width: 75%;
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+}
+
+.novel-chapters {  
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 90px);
+    gap: .2rem;
+    line-height: 1.3rem;
+    width: auto;
+}
+
+.novel-chapters.show-less {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.other-novels{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    font-size: 2rem;
+    height: 50%;
+}
+
+.other-novels a {
+    color: #0276DB;
+    letter-spacing: 1px;
+}
+
+.button {
+    grid-column: span 2;
+    order: 2;
+    text-align: center;
+}
+
+button {
+    font-weight: bold;
+    font-size: 1rem;
+
+    outline: none;
+    border: none;
+    background: none;
+
+    cursor: pointer;
+    color: #00A1D9;
+
+    order: 1;
+}
+
+button:hover {
+    color: #fc4349 ;
+    transition: all .3s ease;
+}
+/* END DESCRIPTION & CHAPTERS */

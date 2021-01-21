@@ -1,0 +1,34 @@
+@media screen and (max-width: 1272px){
+    body {
+        width: 100%;
+    }
+    
+    .container{
+        width: 100%;
+    }
+
+    button {
+        background-color: #eee;
+        color: black;
+        border: 1px solid;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 550px){
+    select {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 455px){
+    .chapter-select-display {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    select {
+        width: 200px;
+        margin: 10px 0 10px 0;
+    }
+}

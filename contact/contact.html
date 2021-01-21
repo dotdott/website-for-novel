@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="icon" href="../novels-image/teddy-bear.png">
+    <title>Contato</title>
+</head>
+<body>
+    <div class="headerjs">
+        <script src="../navbar/navbar.js"></script>
+    </div>
+
+    <div class="container">
+        <form>
+            <label for="name">Seu Nome</label>
+            <input type="text" id="user" name="user_name" required>
+            
+            <label for="usermail">Seu e-mail para contato</label>
+            <input type="email" id="mail" name="user_mail" required>
+            <label for="contact-reason">Selecione o motivo do contato</label> 
+            <select name="contact-reason" id="contact-reason">
+                <option value="v1">Erro de tradução</option>
+                <option value="v1">Pedidos para traduções</option>
+                <option value="v1">Outros</option>
+            </select>
+            <textarea name="contact-description" id="description" cols="30" rows="10"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>

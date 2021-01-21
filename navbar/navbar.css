@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto&display=swap');
+
+*{ 
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    padding: 20px 0 20px 0;
+    border-radius: 0 0 1rem 1rem;
+    background: #2e5b6d;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-right: 6rem;
+    font-size: 2.5rem;
+    margin-left: 10%;
+}
+
+
+ul li {
+    list-style: none;
+}
+
+nav a {
+    letter-spacing: 3px;
+    color:rgb(255, 233, 233) !important;
+}
+
+nav a:hover {
+    color: #6dbcdb!important;
+}
+
+/* HREF HOVER EFFECTS */
+
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #6dbcdb;
+}
+
+/* a:visited {
+    color: #6dbcdb;
+} */
+nav a:hover,
+a:hover {
+    color: #fc4349;
+    font-size: 99%;
+    transition: ease 350ms all;
+}
+
+/* END HOVER EFFECTS */
+
+@media screen and (max-width: 768px), screen and (max-width:320px){
+    ul{
+        gap: 0;
+    }
+    nav a {
+        margin-left: 25%;
+    }
+}

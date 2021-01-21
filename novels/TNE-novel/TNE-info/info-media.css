@@ -1,0 +1,88 @@
+@media screen and (max-width: 1272px){
+    .container {
+        width: 100vw;
+        height: 100%;
+    }
+    .novel-chapters.show-less {
+        grid-template-columns: repeat(4, 1fr);
+    }
+} 
+
+@media screen and (max-width: 800px){
+    .container {
+        display: block;
+    }
+
+    .novel-info {
+        display: flex;
+    }
+
+    .sub-info {
+        padding: 10px;
+        margin: 20px 0 0 20px;
+    }
+
+    .novel-content {
+        padding: 10px;
+    }
+    .novel-content h2 {
+        text-align: center;
+    }
+
+    .novel-chapters {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        gap: .5rem;
+    }
+
+    .novel-chapters.show-less {
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+    }
+
+    .other-novels {
+        margin-top: .8rem;
+        font-size: 1.5rem;
+        gap: 1rem;
+        text-align: center;
+    }
+    hr {
+        display: block;
+        border: 1px solid #6dbcdb;
+        margin-bottom: 1rem;
+    }
+    hr:nth-child(2) {
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width:512px) {
+    .novel-info {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sub-info {
+        margin: 0;
+    }
+
+    .novel-chapters {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        gap: .5rem;
+    }
+    .novel-chapters.show-less {
+        grid-template-columns: repeat(4,1fr);
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    .novel-chapters.novel-chapters.show-less{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
