@@ -1,0 +1,48 @@
+@media screen and (max-width: 1272px){
+.main {
+    max-width: 100%;
+}
+}
+
+@media screen and (max-width: 768px){
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper-poster{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    hr {
+        display: block;
+        margin-bottom: 1rem;
+        border: 1px solid #6dbcdb;
+    }
+
+    img {
+        width: 300px;
+        margin: 0 15px 0 15px;
+    }
+
+    h2{
+        /* text-align: start; */
+        margin-left: 5%;
+    }
+    
+    .genre {
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 512px){
+    img {
+        width: 250px;
+    }
+    .wrapper-poster {
+        justify-content: left;
+    }
+}
