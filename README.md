@@ -17,5 +17,6 @@ I made a dynamic URL for every chapter, and made a condition to when the site is
 
 It also have LocalStorage for saving the user read-mode preferences. Be it light/dark.
 
-CONTENT PT-BR
-Português do Brasil
+***CONTENT PT-BR
+
+Português do Brasil***
