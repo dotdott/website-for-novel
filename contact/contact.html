@@ -12,23 +12,40 @@
     <div class="headerjs">
         <script src="../navbar/navbar.js"></script>
     </div>
-
     <div class="container">
         <form>
-            <label for="name">Seu Nome</label>
-            <input type="text" id="user" name="user_name" required>
+            <label for="username">Seu Nome</label>
+            <input type="text" id="username" name="user_name" required>
             
             <label for="usermail">Seu e-mail para contato</label>
-            <input type="email" id="mail" name="user_mail" required>
+            <input type="email" id="usermail" name="user_mail" required>
+
             <label for="contact-reason">Selecione o motivo do contato</label> 
             <select name="contact-reason" id="contact-reason">
                 <option value="v1">Erro de tradução</option>
                 <option value="v1">Pedidos para traduções</option>
                 <option value="v1">Outros</option>
             </select>
-            <textarea name="contact-description" id="description" cols="30" rows="10"></textarea>
-            <input type="submit" value="Enviar">
+            
+            <textarea 
+                name="contact-description" 
+                id="description" 
+                cols="30" 
+                rows="10" 
+                placeholder="Escreva sua mensagem..."
+            >
+            </textarea>
+            <button type="submit">Enviar</button>
         </form>
+
+        <div class="modal">
+            <h1>
+                Mensagem enviada com sucesso, responderemos em até 2 dias.
+                <span>X</span>
+            </h1>
+        </div>
     </div>
+
+    <script src="contact.js"></script>
 </body>
 </html>

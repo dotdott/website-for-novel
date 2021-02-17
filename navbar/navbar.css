@@ -4,6 +4,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root {
+    --link-strong: #0276DB;
+    --link-light: #6dbcdb;
+    --link-hover: #fc4349;
+}
+
 p {
     font-family: 'Roboto', sans-serif;
 }
@@ -35,7 +41,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #6dbcdb!important;
+    color: var(--link-light) !important;
 }
 
 /* HREF HOVER EFFECTS */
@@ -44,26 +50,27 @@ nav a:hover {
 a {
     text-decoration: none;
     font-weight: bold;
-    color: #6dbcdb;
+    color: var(--link-light);
 }
 
-/* a:visited {
-    color: #6dbcdb;
-} */
+a:visited {
+    color: var(--link-light);
+}
 nav a:hover,
 a:hover {
-    color: #fc4349;
+    color: var(--link-hover);
     font-size: 99%;
     transition: ease 350ms all;
 }
 
 /* END HOVER EFFECTS */
 
-@media screen and (max-width: 768px), screen and (max-width:320px){
+@media screen and (max-width: 768px), screen and (max-width:270px){
     ul{
         gap: 0;
     }
     nav a {
         margin-left: 25%;
+        font-size: 2rem;
     }
 }
